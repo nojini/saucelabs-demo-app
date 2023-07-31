@@ -1,15 +1,7 @@
 name: Android SauceLabs My Demo App
 
 on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - 'ios/**'
-      - '__tests__/**'
-      - 'docs/**'
-      - '**.md'
-      - '**/ios.yml'
+  workflow_dispatch:
 defaults:
   run:
     working-directory: android
